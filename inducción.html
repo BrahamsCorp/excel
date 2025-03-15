@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Básicos de Excel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4472C4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4472C4;
+            border-bottom: 2px solid #4472C4;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #5B9BD5;
+            margin-top: 25px;
+        }
+        .section {
+            background-color: #f9f9f9;
+            border-left: 4px solid #5B9BD5;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #4472C4;
+        }
+        .feature-item h4 {
+            color: #4472C4;
+            margin-top: 0;
+        }
+        .excel-icon {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-icon {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-right: 15px;
+        }
+        .interface-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4472C4;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .tip {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #2e86ab;
+        }
+        .tip-title {
+            color: #2e86ab;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-icon">
+                <svg class="excel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path fill="#4CAF50" d="M41,10H25v28h16c0.553,0,1-0.447,1-1V11C42,10.447,41.553,10,41,10z"/>
+                    <path fill="#FFF" d="M32 15H39V18H32zM32 25H39V28H32zM32 30H39V33H32zM32 20H39V23H32zM25 15H30V18H25zM25 25H30V28H25zM25 30H30V33H25zM25 20H30V23H25z"/>
+                    <path fill="#2E7D32" d="M27 42L6 38 6 10 27 6z"/>
+                    <path fill="#FFF" d="M19.129,31l-2.411-4.561c-0.092-0.171-0.186-0.483-0.281-0.939h-0.042 c-0.046,0.215-0.154,0.541-0.324,0.979L13.652,31H9.895l4.462-7.001L10.274,17h3.837l2.001,4.196 c0.156,0.331,0.296,0.725,0.42,1.179h0.043c0.078-0.271,0.224-0.68,0.439-1.22L19.237,17h3.515l-4.199,6.939l4.316,7.059 h-3.74V31z"/>
+                </svg>
+            </div>
+            <div>
+                <h1>Conceptos Básicos de Excel</h1>
+                <p style="color: white; margin: 5px 0 0 0; font-weight: 500;">Tutor: Brahams</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>¿Qué es Microsoft Excel?</h2>
+            <div class="section">
+                <p>Microsoft Excel es un programa de hojas de cálculo desarrollado por Microsoft. Es una herramienta poderosa para:</p>
+                <ul>
+                    <li>Organizar datos</li>
+                    <li>Realizar cálculos</li>
+                    <li>Analizar información</li>
+                    <li>Crear visualizaciones</li>
+                    <li>Automatizar tareas repetitivas</li>
+                </ul>
+                <p>Excel forma parte del conjunto de aplicaciones de Microsoft Office y es ampliamente utilizado en entornos educativos, profesionales y personales.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Interfaz de Excel</h2>
+            <div class="section">
+                <p>La interfaz de Excel está compuesta por varios elementos clave que te ayudarán a navegar y utilizar el programa:</p>
+                
+                <div class="image-container">
+                    <img src="image1.png" alt="Interfaz de Excel" class="interface-img">
+                    <img src="image.png" alt="Interfaz de Excel" class="interface-img">
+                </div>
+                
+                <h3>Elementos principales de la interfaz:</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Cinta de opciones (Ribbon)</h4>
+                        <p>Barra horizontal con pestañas que contiene todas las herramientas y funciones de Excel organizadas por categorías.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Barra de fórmulas</h4>
+                        <p>Muestra el contenido de la celda activa y permite editar datos o fórmulas.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Área de trabajo (Hoja de cálculo)</h4>
+                        <p>Cuadrícula formada por filas (números) y columnas (letras) donde se introducen los datos.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Pestañas de hojas</h4>
+                        <p>Permiten navegar entre diferentes hojas de cálculo dentro de un mismo archivo.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Barra de estado</h4>
+                        <p>Muestra información sobre la tarea actual y accesos rápidos a funciones comunes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Barras de desplazamiento</h4>
+                        <p>Permiten moverse vertical y horizontalmente por la hoja de cálculo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conceptos Fundamentales</h2>
+            
+            <div class="section">
+                <h3>Celdas, filas y columnas</h3>
+                <p>La unidad básica de una hoja de cálculo es la <strong>celda</strong>. Cada celda se identifica por su dirección, que consiste en:</p>
+                <ul>
+                    <li><strong>Letra de columna</strong>: Las columnas se identifican con letras (A, B, C...)</li>
+                    <li><strong>Número de fila</strong>: Las filas se identifican con números (1, 2, 3...)</li>
+                </ul>
+                <p>Por ejemplo, la celda "B3" se refiere a la intersección de la columna B y la fila 3.</p>
+                
+                <h3>Rangos</h3>
+                <p>Un <strong>rango</strong> es un conjunto de celdas adyacentes. Se identifican indicando la primera y última celda, separadas por dos puntos.</p>
+                <p>Ejemplo: A1:C5 (incluye todas las celdas desde A1 hasta C5)</p>
+                
+                <h3>Tipos de datos</h3>
+                <p>Excel puede manejar diferentes tipos de datos:</p>
+                <ul>
+                    <li><strong>Texto</strong>: Información alfanumérica</li>
+                    <li><strong>Números</strong>: Valores numéricos para cálculos</li>
+                    <li><strong>Fechas y horas</strong>: Para trabajar con información temporal</li>
+                    <li><strong>Fórmulas</strong>: Expresiones que realizan cálculos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fórmulas y Funciones</h2>
+            
+            <div class="section">
+                <h3>¿Qué son las fórmulas?</h3>
+                <p>Las <strong>fórmulas</strong> son expresiones que realizan cálculos con los datos de una hoja de cálculo. Todas las fórmulas comienzan con el signo igual (=).</p>
+                
+                <div class="tip">
+                    <div class="tip-title">Consejo:</div>
+                    <p>Puedes crear fórmulas utilizando referencias a celdas en lugar de valores directos. Esto permite que tus cálculos se actualicen automáticamente cuando cambias los datos.</p>
+                </div>
+                
+                <h3>Funciones básicas</h3>
+                <p>Las <strong>funciones</strong> son fórmulas predefinidas que realizan cálculos específicos. Algunas de las más comunes son:</p>
+                
+                <table>
+                    <tr>
+                        <th>Función</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                    <tr>
+                        <td>SUMA</td>
+                        <td>Suma todos los valores en un rango</td>
+                        <td>=SUMA(A1:A10)</td>
+                    </tr>
+                    <tr>
+                        <td>PROMEDIO</td>
+                        <td>Calcula el promedio de un rango</td>
+                        <td>=PROMEDIO(B1:B20)</td>
+                    </tr>
+                    <tr>
+                        <td>MAX</td>
+                        <td>Encuentra el valor más alto</td>
+                        <td>=MAX(C1:C15)</td>
+                    </tr>
+                    <tr>
+                        <td>MIN</td>
+                        <td>Encuentra el valor más bajo</td>
+                        <td>=MIN(D1:D15)</td>
+                    </tr>
+                    <tr>
+                        <td>CONTAR</td>
+                        <td>Cuenta las celdas con números</td>
+                        <td>=CONTAR(E1:E30)</td>
+                    </tr>
+                    <tr>
+                        <td>SI</td>
+                        <td>Realiza una comparación lógica</td>
+                        <td>=SI(F1>10,"Alto","Bajo")</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formato y Presentación</h2>
+            
+            <div class="section">
+                <p>Excel ofrece numerosas opciones para dar formato a tus datos y mejorar su presentación:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Formato de números</h4>
+                        <p>Personaliza cómo se muestran los valores: moneda, porcentaje, fecha, etc.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Formato condicional</h4>
+                        <p>Cambia automáticamente el aspecto de las celdas según sus valores.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Estilos de celda</h4>
+                        <p>Aplica combinaciones predefinidas de formatos rápidamente.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Alineación y orientación</h4>
+                        <p>Ajusta la posición y dirección del texto dentro de las celdas.</p>
+                    </div>
+                </div>
+                
+                <div class="tip">
+                    <div class="tip-title">Consejo:</div>
+                    <p>Utiliza el formato condicional para destacar valores importantes, como gastos por encima del presupuesto o calificaciones por debajo del promedio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gráficos y Visualización</h2>
+            
+            <div class="section">
+                <p>Excel permite crear visualizaciones de datos para comunicar información de manera efectiva:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Gráficos de columnas/barras</h4>
+                        <p>Ideales para comparar valores entre diferentes categorías.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Gráficos de líneas</h4>
+                        <p>Perfectos para mostrar tendencias a lo largo del tiempo.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Gráficos circulares</h4>
+                        <p>Útiles para mostrar proporciones de un total.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Minigráficos</h4>
+                        <p>Pequeñas visualizaciones que caben en una sola celda.</p>
+                    </div>
+                </div>
+                
+                <p>Para crear un gráfico básico:</p>
+                <ol>
+                    <li>Selecciona los datos que deseas visualizar</li>
+                    <li>Ve a la pestaña "Insertar"</li>
+                    <li>Elige el tipo de gráfico que mejor represente tus datos</li>
+                    <li>Personaliza utilizando las herramientas de diseño y formato</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>Referencias Absolutas vs. Relativas</h2>
+            
+            <div class="section">
+                <p>Cuando copias o arrastras fórmulas en Excel, las referencias a celdas pueden comportarse de diferentes maneras:</p>
+                
+                <h3>Referencias relativas</h3>
+                <p><strong>Ejemplo:</strong> =A1+B1</p>
+                <p>Cambian al copiar la fórmula. Si copias esta fórmula de la celda C1 a la celda C2, se convertirá en =A2+B2.</p>
+                
+                <h3>Referencias absolutas</h3>
+                <p><strong>Ejemplo:</strong> =$A$1+$B$1</p>
+                <p>No cambian al copiar la fórmula. El símbolo $ fija la referencia a una celda específica.</p>
+                
+                <h3>Referencias mixtas</h3>
+                <p><strong>Ejemplos:</strong> =$A1 (columna fija, fila relativa) o =A$1 (columna relativa, fila fija)</p>
+                
+                <div class="tip">
+                    <div class="tip-title">Consejo:</div>
+                    <p>Pulsa F4 después de seleccionar una referencia de celda en una fórmula para alternar entre los diferentes tipos de referencias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Atajos de Teclado Útiles</h2>
+            
+            <div class="section">
+                <p>Dominar estos atajos te ayudará a trabajar más rápido:</p>
+                
+                <table>
+                    <tr>
+                        <th>Atajo</th>
+                        <th>Acción</th>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+C</td>
+                        <td>Copiar</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+X</td>
+                        <td>Cortar</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+V</td>
+                        <td>Pegar</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Z</td>
+                        <td>Deshacer</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Y</td>
+                        <td>Rehacer</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+S</td>
+                        <td>Guardar</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+N</td>
+                        <td>Nuevo libro</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+P</td>
+                        <td>Imprimir</td>
+                    </tr>
+                    <tr>
+                        <td>F2</td>
+                        <td>Editar celda</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl+Inicio</td>
+                        <td>Ir a la celda A1</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <div class="section" style="background-color: #e8f4f8; border-left-color: #2e86ab;">
+            <h3>Próximos pasos:</h3>
+            <p>Ahora que conoces los conceptos básicos de Excel, puedes comenzar con los ejercicios prácticos para aplicar lo aprendido. Recuerda que la práctica constante es la clave para dominar Excel.</p>
+            <p>¡Buena suerte en tu camino de aprendizaje!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos de Excel para Principiantes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4472C4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4472C4;
+            border-bottom: 2px solid #4472C4;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #5B9BD5;
+            margin-top: 25px;
+        }
+        .ejercicio {
+            background-color: #f9f9f9;
+            border-left: 4px solid #5B9BD5;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+            color: #d14;
+        }
+        .consejos {
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 30px;
+            border: 1px solid #a8d1df;
+        }
+        .consejos h3 {
+            color: #2e86ab;
+            margin-top: 0;
+        }
+        .formula {
+            font-weight: bold;
+            color: #2e7d32;
+        }
+        .excel-icon {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-icon {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-icon">
+                <svg class="excel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path fill="#4CAF50" d="M41,10H25v28h16c0.553,0,1-0.447,1-1V11C42,10.447,41.553,10,41,10z"/>
+                    <path fill="#FFF" d="M32 15H39V18H32zM32 25H39V28H32zM32 30H39V33H32zM32 20H39V23H32zM25 15H30V18H25zM25 25H30V28H25zM25 30H30V33H25zM25 20H30V23H25z"/>
+                    <path fill="#2E7D32" d="M27 42L6 38 6 10 27 6z"/>
+                    <path fill="#FFF" d="M19.129,31l-2.411-4.561c-0.092-0.171-0.186-0.483-0.281-0.939h-0.042 c-0.046,0.215-0.154,0.541-0.324,0.979L13.652,31H9.895l4.462-7.001L10.274,17h3.837l2.001,4.196 c0.156,0.331,0.296,0.725,0.42,1.179h0.043c0.078-0.271,0.224-0.68,0.439-1.22L19.237,17h3.515l-4.199,6.939l4.316,7.059 h-3.74V31z"/>
+                </svg>
+            </div>
+            <div>
+                <h1>Ejercicios Básicos de Excel para Principiantes</h1>
+                <p style="color: white; margin: 5px 0 0 0; font-weight: 500;">Tutor: Brahams</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>1. Operaciones Aritméticas Básicas</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 1: Suma, Resta, Multiplicación y División</h3>
+                <ol>
+                    <li>Crea una hoja de cálculo nueva</li>
+                    <li>En la celda A1 escribe "Número 1"</li>
+                    <li>En la celda B1 escribe "Número 2"</li>
+                    <li>En la celda C1 escribe "Suma"</li>
+                    <li>En la celda D1 escribe "Resta"</li>
+                    <li>En la celda E1 escribe "Multiplicación"</li>
+                    <li>En la celda F1 escribe "División"</li>
+                    <li>En A2 escribe 10</li>
+                    <li>En B2 escribe 5</li>
+                    <li>En C2 escribe la fórmula <code>=A2+B2</code></li>
+                    <li>En D2 escribe la fórmula <code>=A2-B2</code></li>
+                    <li>En E2 escribe la fórmula <code>=A2*B2</code></li>
+                    <li>En F2 escribe la fórmula <code>=A2/B2</code></li>
+                </ol>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 2: Práctica con más números</h3>
+                <p>Repite las mismas operaciones en las filas 3, 4 y 5 usando diferentes pares de números.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Funciones Básicas</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 3: Función SUMA</h3>
+                <ol>
+                    <li>En una nueva hoja, crea una lista de números en las celdas A1 hasta A10</li>
+                    <li>En la celda A12 escribe la fórmula <code>=SUMA(A1:A10)</code></li>
+                </ol>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 4: Función PROMEDIO</h3>
+                <ol>
+                    <li>Usando la misma lista de números del ejercicio anterior</li>
+                    <li>En la celda A13 escribe la fórmula <code>=PROMEDIO(A1:A10)</code></li>
+                </ol>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 5: Funciones MIN y MAX</h3>
+                <ol>
+                    <li>En la celda A14 escribe la fórmula <code>=MIN(A1:A10)</code></li>
+                    <li>En la celda A15 escribe la fórmula <code>=MAX(A1:A10)</code></li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Formato Condicional</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 6: Destacar valores mayores que el promedio</h3>
+                <ol>
+                    <li>Selecciona el rango A1:A10</li>
+                    <li>Ve a "Formato Condicional" > "Reglas destacar celdas" > "Mayor que"</li>
+                    <li>Introduce la fórmula <code>=PROMEDIO($A$1:$A$10)</code></li>
+                    <li>Elige un color para destacar estos valores</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Gestión de Datos Personales</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 7: Presupuesto mensual simple</h3>
+                <ol>
+                    <li>Crea una tabla con estos encabezados: "Categoría", "Presupuesto", "Gastado", "Diferencia"</li>
+                    <li>Añade categorías como: Alimentación, Transporte, Entretenimiento, etc.</li>
+                    <li>Completa la columna "Presupuesto" con valores deseados</li>
+                    <li>Completa la columna "Gastado" con valores reales</li>
+                    <li>En la columna "Diferencia" usa la fórmula <code>=B2-C2</code> (ajusta según tu tabla)</li>
+                    <li>Usa la función <code>=SUMA()</code> para calcular los totales</li>
+                </ol>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 8: Cálculo de calificaciones</h3>
+                <ol>
+                    <li>Crea una tabla con: "Asignatura", "Examen 1", "Examen 2", "Trabajo", "Promedio"</li>
+                    <li>Completa con asignaturas y calificaciones</li>
+                    <li>En "Promedio" usa la fórmula <code>=PROMEDIO(B2:D2)</code> (ajusta según tu tabla)</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Gráficos Simples</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 9: Crear un gráfico de columnas</h3>
+                <ol>
+                    <li>Usa los datos del ejercicio del presupuesto</li>
+                    <li>Selecciona el rango con categorías y valores</li>
+                    <li>Ve a la pestaña "Insertar" > "Gráficos" > "Columna"</li>
+                    <li>Personaliza el gráfico con títulos y colores</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Referencias Absolutas y Relativas</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 10: Tabla de multiplicar</h3>
+                <ol>
+                    <li>En A1:A10 escribe los números del 1 al 10</li>
+                    <li>En B1:K1 escribe los números del 1 al 10 (horizontalmente)</li>
+                    <li>En B2 escribe la fórmula <code>=$A2*B$1</code></li>
+                    <li>Arrastra la fórmula para llenar el rango B2:K11</li>
+                    <li>Observa cómo se crea una tabla de multiplicar completa</li>
+                </ol>
+            </div>
+        </section>
+
+        <div class="consejos">
+            <h3>Consejos para Practicar:</h3>
+            <ul>
+                <li>Intenta replicar estos ejercicios sin mirar las instrucciones</li>
+                <li>Experimenta cambiando valores para ver cómo afectan los resultados</li>
+                <li>Consulta la ayuda de Excel (F1) cuando no entiendas alguna función</li>
+                <li>Practica regularmente con datos reales que te interesen</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
